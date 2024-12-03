@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    <style>
+      button{
+        margin: .3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cart Quantity</h1>
+    <button 
+    onclick="console.log(`Cart Quantity: ${cartQuanitity}`)
+    ">Show Quantity</button><br>
+    <button onclick="addQuantity(1)"
+      >Add to cart : +1</button><br>
+    <button onclick=" addQuantity(2)">+2</button>
+    <button onclick="addQuantity(3)">+3</button><br>
+    <button onclick="addQuantity(4)">+4</button>
+    <button onclick="addQuantity(5)">+5</button><br>
+    <button onclick="subtractQuantity(1)">Remove from cart: -1</button><br>
+    <button onclick="subtractQuantity(2)">-2</button>
+    <button onclick="subtractQuantity(3)">-3</button><br>
+    <p class="data"></p>
+    <button onclick="cartQuanitity = 0;
+    let data = document.querySelector('.data');
+    data.innerText = `Cart was reset
+Cart Quantity: ${cartQuanitity}`;
+    ">Reset Cart</button><br>
+  <script>
+    let cartQuanitity = 0;
+    let data = document.querySelector('.data');
+    function addQuantity(value){
+      if(cartQuanitity>=10){
+        let data = document.querySelector('.data');
+        data.innerText = `Cart is full :`;
+    }else{
+      cartQuanitity += value;
+      data.innerText = `Cart Quantity: ${cartQuanitity}`
+    }
+    }
+    function subtractQuantity(value){
+      if(cartQuanitity<value){
+        data.innerText = `Not enough items in the cart. Cart Quantity: ${cartQuanitity}`
+      }else{
+      cartQuanitity -= value ;
+      data.innerText = `Items Removed. Cart Quantity: ${cartQuanitity}`
+      }
+      }
+  </script>
+  </body>
+</html>

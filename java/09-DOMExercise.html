@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9-Exercise</title>
+</head>
+<body>
+  <!-- <button onclick="chose('Heads')">Heads</button> -->
+  <!-- <button onclick="chose('Tails')">Tails</button> -->
+  <!-- <p></p> -->
+  <input placeholder="Enter your name here" onkeydown=" 
+  if(event.key === 'Enter'){
+    kaka()
+    document.querySelector('input').value = '';
+  }" onkeyup="document.querySelector('.continous').innerText = (value)">
+  <button onclick="kaka()">Submit</button>
+  <p class="pera"></p>
+  <p class="continous"></p>
+<script>
+  function kaka(){
+    document.querySelector('.pera').innerText = `Your name is: ${document.querySelector('input').value}`;
+  }
+  // function chose(x){
+  //   document.querySelector('p').innerText = `You chose: ${x}`;
+  // }
+</script>
+</body>
+</html>

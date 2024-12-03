@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-Porject</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .js-subscribe-button{
+      background-color: black;
+      color: white;
+      border-radius: 70px;
+      border: none;
+      /* height: 20px; */
+      padding: 10px 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .is-subscribed{
+      background-color: rgb(240,240,240);
+      color: black;
+    }
+    .cost-input{
+      font-size: 15px;
+      padding: 10px;
+
+    }
+    .calculate-button{
+      background-color: green;
+      color: white;
+      border: none;
+      font-size: 15px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    .error{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>YouTube Subscribe button</p>
+  <button class="js-subscribe-button" onclick=" Subscribe()">Subscribe</button>
+  <p>Amazon Shipping Calculator</p>
+  <p>Orders under $40 = +$10 Shipping.</p>
+  <p>Orders over $40 = FREE Shipping.</p>
+  <input type="number" placeholder="Cost of order" class="cost-input">
+  <button onclick="calculateTotal()" class="calculate-button">Calculate</button>
+  <p class="error"></p>
+  <p class="print"></p>
+  <script>
+    function calculateTotal(){
+      const inputElement = document.querySelector('input').value;
+      const cost = Math.round(Number(inputElement) + 10);
+      if(inputElement < 0){
+        document.querySelector('.error').innerText = `Error: Cost cannot be less than $0`
+      }else if(inputElement > 40){
+        document.querySelector('.print').innerText = `Total Amount = $${inputElement} + Free Shipping :`;
+      }else{
+        document.querySelector('.print').innerText = `Total Amount = $${cost}
+        (Included shipping charge)`;
+      }
+    }
+    function Subscribe(){
+      const button = document.querySelector('button');
+      if(button.innerText === 'Subscribe'){
+        button.innerText = 'Subscribed';
+        button.classList.add('is-subscribed');
+      }else{
+        button.classList.remove('is-subscribed');
+        button.innerText = 'Subscribe';
+      }
+      }
+    const btn =  document.querySelector('.YouChose')
+  </script>
+</body>
+</html>
