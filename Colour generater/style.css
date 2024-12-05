@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  text-align: center;
+}
+.outer{
+  padding-top: 2%;
+}
+h1{
+  font-size: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.colorBox{
+  height: 30rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  border: none;
+  border-radius: 5rem;
+}
+button {
+  width: 200px;
+  height: 50px;
+  border: rgb(40, 5, 5);
+  background: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 5rem;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+button:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(15px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  border-radius: 5rem;
+}
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
