@@ -5,32 +5,32 @@
     <link rel="stylesheet" href="calculator.css">
   </head>
   <body>
-    <h2>Calculator</h2>
-    <div class="div"></div>
-    <p>
-      <button onclick="fufu(1);">1</button>
-      <button onclick="fufu(2)">2</button>
-      <button onclick="fufu(3)">3</button>
-      <button onclick="fufu('/')" class="calculas">/</button>
-    </p>
-    <p>
-      <button onclick="fufu(4)">4</button>
-      <button onclick="fufu(5)">5</button>
-      <button onclick="fufu(6)">6</button>
-      <button onclick="fufu('*')" class="calculas">*</button>
-    </p>
-    <p>
-      <button onclick="fufu(7)">7</button>
-      <button onclick="fufu(8)">8</button>
-      <button onclick="fufu(9)">9</button>
-      <button onclick="fufu('-')" class="calculas">-</button>
-    </p>
-    <p>
-      <button onclick="fufu('-')">0</button>
-      <button onclick="calculation = '';ans.innerText = '';">C</button>
-      <button onclick="calculation = (eval(calculation));ans.innerText = calculation;">=</button>
-      <button onclick="fufu('+');" class="calculas">+</button>
-    </p>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" placeholder="0" id="input" disabled>
+      </div>
+      <div class="buttons">
+         <input type="button" id="clear" value="AC">
+         <input type="button" id="erase" value="DEL">
+         <input type="button" value="/" class="input-button">
+         <input type="button" value="*" class="input-button">
+         <input type="button" value="7" class="input-button">
+         <input type="button" value="8" class="input-button">
+         <input type="button" value="9" class="input-button">
+         <input type="button" value="-" class="input-button">
+         <input type="button" value="6" class="input-button">
+         <input type="button" value="5" class="input-button">
+         <input type="button" value="4" class="input-button">
+         <input type="button" value="+" class="input-button">
+         <input type="button" value="1" class="input-button">
+         <input type="button" value="2" class="input-button">
+         <input type="button" value="3" class="input-button">
+         <input type="button" value="=" id="equal">
+         <input type="button" value="00" class="input-button">
+         <input type="button" value="0" class="input-button">
+         <input type="button" value="." class="input-button">
+      </div>
+    </div>
   <script src="calculator.js"></script>
 </body>
 </html>
