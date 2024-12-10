@@ -2,6 +2,17 @@
 *This repository is a collection of beginner-friendly JavaScript and web development projects. Each project is designed to demonstrate a specific feature or solve a common problem.*
 # Projects
 
+# 🪙Coin Flip
+
+A simple web-based coin flip application that simulates the flipping of a coin and provides random results. This project is great for understanding the basics of JavaScript, event handling, and DOM manipulation.
+
+## Features
+
+- Simulates a coin flip with **Heads** or **Tails** as outcomes.
+- Interactive user interface with a clickable button to flip the coin.
+- Random result generation on each flip.
+- **Local Storage**: Retains your score even after page refresh.
+---
 # 📝 To-Do List Project
 
 A simple and functional To-Do List application built using JavaScript, HTML, and CSS to manage tasks effectively.
@@ -11,12 +22,7 @@ A simple and functional To-Do List application built using JavaScript, HTML, and
 - **Remove Tasks**: Delete tasks once completed.
 - **Mark Tasks**: Identify completed tasks for better organization.
 - **Local Storage**: Retains your tasks even after page refresh.
-
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/vikrant-vikrant/JavaScript.git
-
+---
 # 🧮 Calculator
 
 A simple calculator for performing basic arithmetic operations.
