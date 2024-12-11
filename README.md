@@ -97,3 +97,8 @@ Contributions are welcome!
   * Fork this repository.
   * Create a new branch for your feature or bug fix.
   * Submit a pull request.
+
+## 🚀 How to Run the Project
+ Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/vikrant-vikrant/miniProjects
