@@ -1,0 +1,73 @@
+body{
+  background-color: #515862;
+  color: white;
+  font-family: "atma",Arial;
+}
+.container{
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #757c86;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.427);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+h2{
+  font-size: 40px;
+  color: white;
+  margin: 1rem 0 1rem 0;
+}
+.options{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.options button{
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  /* margin: 0 25px; */
+  cursor: pointer;
+
+} 
+.whoWin{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 2rem 0 1rem 0;
+  justify-content: center;
+  display: flex;
+}
+.move{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 1rem 0;
+  justify-content: center;
+  display: flex;
+}
+.total{
+  font-size: 20px;
+  font-weight: 500;
+}
+.totalScore{
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 2.5rem;
+}
+.totalScore:hover{
+  color: white;
+  background-color: #515862;
+}
+.score{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
