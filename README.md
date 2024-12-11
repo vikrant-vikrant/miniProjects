@@ -17,6 +17,17 @@ A visually inspired clone of the Spotify web player. This project aims to replic
 ## 🖼️ Screenshot
 ![image](https://github.com/user-attachments/assets/8328c6a9-5f77-4ad3-bb8b-3897c35168e9)
 ---
+# Rock Paper Scissors 🎮
+
+A simple implementation of the classic "Rock Paper Scissors" game using HTML, CSS, and JavaScript. This project provides a fun and interactive way to play the game directly in the browser.
+
+## 🛠️ Features
+- **Interactive Gameplay**: Players can choose rock, paper, or scissors, and the computer will make its move randomly.
+- **Score Tracker**: Keeps track of wins, losses, and ties for the session.
+- **Responsive Design**: Works well on both desktop and mobile devices.
+## 🖼️ Screenshot
+![image](https://github.com/user-attachments/assets/24954d36-0ddd-4f4b-9a39-8debe52d3331)
+---
 # Coin Flip🪙
 
 A simple web-based coin flip application that simulates the flipping of a coin and provides random results. This project is great for understanding the basics of JavaScript, event handling, and DOM manipulation.
@@ -53,8 +64,8 @@ A simple calculator for performing basic arithmetic operations.
    * Responsive and user-friendly interface.
 
 ## 🖼️ Screenshot
-![image](https://github.com/user-attachments/assets/089aa0b1-763e-4066-8b65-a06c68436d10)
-![image](https://github.com/user-attachments/assets/dcb0d5df-a120-4ed2-b7ef-52a331940b14)
+![WhatsApp Image 2024-12-11 at 22 06 21_08577509](https://github.com/user-attachments/assets/a02bdd2c-b335-4de1-ba56-eb4376f8aab9)
+
 
 ---
 #  Cat Facts & Dog Images 🐾
