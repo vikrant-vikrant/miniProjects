@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "atma",serif;
+    background-image: url(bg.jpg) ;
+    background-size: cover;
+    color: whitesmoke;
+}
+.container{
+    border-radius: 40px;
+    width: 40%;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background: rgba(77, 77, 77, 0.5);
+    box-shadow: 10px 10px 100px rgba(77, 77, 77, 0.9);
+}
+h1{
+    font-size: 60px;
+    margin : 0;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    text-align: center; 
+}
+.up{
+    display: flex;
+    justify-content: center;
+}
+.up div{
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    margin:10px;   
+    box-shadow: 2px 2px 25px rgba(245, 222, 179, 0.3);
+    margin-left: 20px;
+    cursor: pointer;
+}
+.down{
+    display: flex;
+    justify-content: center;
+}
+.down div{
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    margin:20px 10px 10px 10px;   
+    box-shadow: 2px 2px 25px rgba(245, 222, 179, 0.3);
+    margin-left: 20px;
+}
+.blue{
+    background: linear-gradient(
+        125deg,
+        #5fd4ff,
+        #388efe
+    );
+}
+.red{
+    background: linear-gradient(
+        125deg,
+        rgb(248, 93, 93),
+        rgba(189, 36, 36, 0.801)
+    );
+}.green{
+    background: linear-gradient(
+        125deg,
+        #77bf51,
+        #477230
+    );
+}.yellow{
+    background: linear-gradient(
+        125deg,
+        #ffe546,
+        #feaa24
+    );
+}
+.flash{
+    opacity: .3;
+}
+.userflash{
+    opacity: .5;
+
+}
+.score{
+    text-align: center;
+    font-size: 20px;
+}
