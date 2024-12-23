@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #6096b4, #bdcdd6);
+}
+.container {
+  width: 50%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  /* max-height: 500px; */
+}
+.college {
+  position: relative;
+  background-color: #bdcdd6;
+  padding: 25px 15px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+}
+.college input {
+  width: 75%;
+  height: 40px;
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  border: none;
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  padding: 0.8rem;
+  color: rgb(53, 53, 53);
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px;
+  background-color: #bdcdd6;
+}
+.college input:focus {
+  outline: none;
+  border-color: grey;
+}
+.college button {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 60px;
+  border-radius: 5px;
+  font-family: "poppib", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: rgba(114, 125, 130, 0.4);
+  color: #747c81;
+  border: none;
+  cursor: pointer;
+}
+.list {
+  background-color: transparent;
+  margin-top: 60px;
+  border-radius: 10px;
+  width: initial;
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+  padding: 1rem 4rem;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.name {
+  background-color: #bdcdd6;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(95, 95, 95);
+  margin: 1rem;
+}
+ul li {
+  margin-left: 1rem;
+}
+.list li {
+  font-family: "poppib", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 0.5rem 1.5rem;
+  color: rgb(0, 0, 0);
+}
+.list li {
+  display: -webkit-box;
+  overflow: hidden;
+}
+.list ol li {
+  color: rgb(0, 0, 0);
+  height: 2rem;
+}
+
+li {
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.2);
+  margin-top: 0.5rem;
+}
