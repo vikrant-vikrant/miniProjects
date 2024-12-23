@@ -21,9 +21,12 @@ document.querySelector("button").addEventListener("click", async () => {
   let country = document.querySelector("input");
   country = country.value;
   let colleges = await getCollege(country);
-  show(colleges);
-  console.log("hey");
-  document.querySelector("input").innerHTML = "kaka";
+  if (colleges.length == 0) {
+    alert("Type error or Data not found");
+  } else {
+    show(colleges);
+  }
+  document.querySelector("input").value = "";
 });
 function show(colleges) {
   let list = document.querySelector(".list");
@@ -32,9 +35,9 @@ function show(colleges) {
     list.innerHTML += `<li>${coll.name}</li>`;
   }
 }
+document.querySelector("input").addEventListener("keydown", function (event) {
+  if (event.key == "Enter") {
+    document.querySelector("button").click();
+  }
+});
 
-document.querySelector("input").addEventListener("keydown",function(event){
-    if(event.key == "Enter"){
-      document.querySelector("button").click();
-    }
-  })
