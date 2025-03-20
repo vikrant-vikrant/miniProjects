@@ -17,6 +17,17 @@ A visually inspired clone of the Spotify web player. This project aims to replic
 ## 🖼️ Screenshot
 ![image](https://github.com/user-attachments/assets/8328c6a9-5f77-4ad3-bb8b-3897c35168e9)
 ---
+# Coding Platform 🧑🏻‍💻
+
+A visually inspired clone of the Apna College web . This project aims to replicate the aesthetics and basic layout of ApnaCollege's interface.
+
+## </> Features
+- **Responsive Design**: Works well on both desktop and mobile devices.
+- **Navbar Options**: A functional UI for play/pause, next, and previous actions.
+
+## 🖼️ Screenshot
+![alt text](image.png)
+---
 # Rock Paper Scissors 🎮
 
 A simple implementation of the classic "Rock Paper Scissors" game using HTML, CSS, and JavaScript. This project provides a fun and interactive way to play the game directly in the browser.
