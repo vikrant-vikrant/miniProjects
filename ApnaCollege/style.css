@@ -1,0 +1,146 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: "roboto", sans-serif;
+}
+.nav {
+  height: 80px;
+  width: calc(100% - 8rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem 0 4rem;
+  border-bottom: 1.5px solid #ffa511;
+}
+.nav img {
+  width: 10rem;
+}
+.options {
+  display: flex;
+  font-size: 1.3vw;
+  font-weight: 400;
+  align-items: center;
+}
+.option {
+  padding: 0.7rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+.new {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 1.5px solid #ffa511;
+}
+.icon {
+  font-size: 2vw;
+  font-weight: 800;
+  display: none;
+}
+.content {
+  width: 100vw;
+  height: calc(100vh - 82px);
+  display: flex;
+  position: relative;
+}
+.left {
+  height: 100%;
+  width: 40vw;
+}
+.right {
+  height: 100%;
+  width: 60vw;
+}
+.right img {
+  height: calc(100vh - 82px);
+  position: absolute;
+  right: 4rem;
+}
+.info {
+  padding: 5vw 4vw;
+}
+.info h1 {
+  color: #1b2e35;
+}
+.info h2 {
+  font-size: 10vh;
+  margin: 1vh 0;
+  line-height: 10vh;
+  color: #2c444e;
+}
+.info button {
+  margin-top: 5vh;
+  padding: 2vh;
+  font-weight: 600;
+  font-size: 3vh;
+  border: none;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  background-color: #ffa511;
+  color: #fff;
+  cursor: pointer;
+}
+.info button i {
+  font-size: 3vh;
+}
+@media (max-width: 600px) {
+  .nav {
+    width: calc(100% - 10vw);
+    padding: 0 5vw 0 5vw;
+    height: 70px;
+  }
+  .option {
+    display: none;
+  }
+  .icon {
+    display: inline;
+    font-size: 2rem;
+  }
+  .nav img {
+    width: 7rem;
+  }
+  .content {
+    flex-direction: column;
+    height: calc(100vh - 72px);
+  }
+  .left {
+    height: 40vh;
+    width: 100%;
+  }
+  .right {
+    height: 60vh;
+    width: 100%;
+  }
+  .right img {
+    width: 100vw;
+    height:60% ;
+    right: 0vw;
+    padding-top: 2vh;
+  }
+  .info {
+    padding: 5vw 7vw;
+  }
+  .info h1 {
+    font-size: 3vh;
+  }
+  .info h2 {
+    font-size: 5vh;
+    margin: 0.8vh 0;
+    line-height: 5vh;
+  }
+  .info button {
+    padding: 1.5vh;
+    font-size: 1.3vh;
+    margin-top: 3vh;
+  }
+  .info button i {
+    font-size: 1.3vh;
+  }
+}
