@@ -26,7 +26,7 @@ A visually inspired clone of the Apna College web . This project aims to replica
 - **Navbar Options**: A functional UI for play/pause, next, and previous actions.
 
 ## 🖼️ Screenshot
-![alt text](image.png)
+![Screenshot_21-3-2025_01012_127 0 0 1](https://github.com/user-attachments/assets/ecd16256-278e-4901-a27e-e4f88593fdd4)
 ---
 # Rock Paper Scissors 🎮
 
