@@ -33,10 +33,40 @@ body {
   margin: 0 0.3rem;
   cursor: pointer;
 }
+.course {
+  display: flex;
+  justify-content: center;
+}
+.course i {
+  font-size: 1.8vw;
+}
+.login,
+.signup {
+  font-size: 1.3vw;
+  font-weight: 400;
+  padding: 0.7rem;
+  cursor: pointer;
+  border: none;
+}
+.login {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #ffa411c0;
+  transition: 0.3s;
+}
+.login:hover {
+  background-color: #ffa511;
+}
+.signup {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
 .new {
   background-color: #fff;
   border-radius: 0.5rem;
   border: 1.5px solid #ffa511;
+  transition: 0.3s;
+}
+.new:hover {
+  background-color: #ffa41185;
 }
 .icon {
   font-size: 2vw;
@@ -83,9 +113,13 @@ body {
   border-radius: 0.6rem;
   display: flex;
   align-items: center;
-  background-color: #ffa511;
+  background-color: #feb43d;
   color: #fff;
   cursor: pointer;
+  transition: .3s;
+}
+.info button:hover{
+  background-color: #ffa511;
 }
 .info button i {
   font-size: 3vh;
@@ -97,6 +131,9 @@ body {
     height: 70px;
   }
   .option {
+    display: none;
+  }
+  .options button{
     display: none;
   }
   .icon {
@@ -120,9 +157,8 @@ body {
   }
   .right img {
     width: 100vw;
-    height:60% ;
+    height: 60%;
     right: 0vw;
-    padding-top: 2vh;
   }
   .info {
     padding: 5vw 7vw;
