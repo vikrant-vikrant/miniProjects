@@ -38,17 +38,17 @@ erase.addEventListener("click",()=>{
   input.value = input.value.substr(0,input.value.length - 1)
 });
 
-let checkBox = document.querySelector(".dayDark");
-checkBox.addEventListener('click', function() {
-  const checkbox = document.querySelector(".dayDark");
-  let btn = document.querySelector("#equal");
-  let calculator = document.querySelector(".calculator");
-  let buttons = document.querySelector(".buttons");
-  if (checkbox.checked) {
-    btn.style.backgroundColor="#4f4d4b";
-    calculator.style.backgroundColor="#666666";
-  } else {
-    calculator.style.backgroundColor="#15173c";
-    btn.style.backgroundColor="#d8737f";
-  }
-});
+// let checkBox = document.querySelector(".dayDark");
+// checkBox.addEventListener('click', function() {
+//   const checkbox = document.querySelector(".dayDark");
+//   let btn = document.querySelector("#equal");
+//   let calculator = document.querySelector(".calculator");
+//   let buttons = document.querySelector(".buttons");
+//   if (checkbox.checked) {
+//     btn.style.backgroundColor="#4f4d4b";
+//     calculator.style.backgroundColor="#666666";
+//   } else {
+//     calculator.style.backgroundColor="#15173c";
+//     btn.style.backgroundColor="#d8737f";
+//   }
+// });
